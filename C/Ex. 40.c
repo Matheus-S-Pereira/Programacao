@@ -13,20 +13,25 @@ int main(int argc, char *argv[]){
  
   numeros = (int**)malloc(linhas*sizeof(int));
  
-  for(int i=0; i<linhas; i++){
+  for(int i=0; i<linhas; i++)
+  {
       numeros[i] = (int*)malloc(colunas*sizeof(int));
   }
  
   printf("\nDigite os numeros para matriz %i x %i \n", linhas, colunas);
-  for(int i=0; i<linhas; i++){
-      for(int j=0; j<colunas; j++){
+  for(int i=0; i<linhas; i++)
+  {
+      for(int j=0; j<colunas; j++)
+      {
         scanf("%i", &numeros[i][j]);
       }
   }
  
   printf("\nOs numeros digitados na matriz foram: \n");
-  for(int i=0; i<linhas; i++){
-      for(int j=0; j<colunas; j++){
+  for(int i=0; i<linhas; i++)
+  {
+      for(int j=0; j<colunas; j++)
+      {
         printf("%i ", numeros[i][j]);
       }
       printf("\n");

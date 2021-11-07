@@ -5,7 +5,7 @@ int main(int argc, char const *argv[])
 {
     float b, h, a;
 
-    printf ("Digite o valor da altura:\n");
+    printf ("Digite o valor da altura do terreno:\n");
     scanf ("%f", &b);
 
     printf ("Digite o valor da base:\n");
